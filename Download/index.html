@@ -1,59 +1,140 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <meta name="viewport" content="width=1920"/>
-    <meta name="description"
-          content="Tizen Download API Demo" />
+  <title>Salary Slip</title>
+  <style>
+    body {
+      font-family: sans-serif;
+    }
 
-    <title>Tizen Download API</title>
+    .container {
+      width: 800px;
+      margin: 0 auto;
+      border: 1px solid #ccc;
+      padding: 20px;
+    }
 
-    <script type='text/javascript' src='$WEBAPIS/webapis/webapis.js'></script>
-    <link rel="stylesheet" type="text/css" href="style.css" />
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
 
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+
+    th, td {
+      border: 1px solid #ccc;
+      padding: 10px;
+      text-align: left;
+    }
+
+    .amount {
+      text-align: right;
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    .footer {
+      text-align: center;
+      margin-top: 20px;
+      font-size: 12px;
+    }
+  </style>
 </head>
-
 <body>
+  <div class="container">
+    <h1>Salary Slip</h1>
 
-    <h1>Tizen Download API</h1>
-
-    <div class="left">
-        <h2>Available buttons/actions:</h2>
-
-        <div>
-            1 - Downloaded file lists<br>
-            2 - Start download - small file<br>
-            3 - Start download - large file<br>
-            Pause - Pause download<br>
-            Play - Resume download<br>
-            Stop - Cancel download<br>
-            0 - Clear logs
-        </div>
-
-        <div id="progress" class="progress">
-            <div id="bar" class="bar"></div>
-        </div>
-
-        <fieldset>
-            <legend>Downloaded files:</legend>
-            <div id="fileList" class="logs"></div>
-        </fieldset>
-
-        <fieldset>
-            <legend>Logs</legend>
-            <div id="logs" class="logs"></div>
-        </fieldset>
-    </div>
-    <div class="right">
-        <h2>Info</h2>
-
-        <p>This application demonstrates the usage of Tizen download API</p>
-
-        <p>The application downloads files from <code>http://techslides.com</code> and <code>http://download.blender.org</code>. If these domains are not accessible it will not work.<br>
-
-            You can change the source location of files to download by changing the contents of <code>url1</code> and <code>url2</code> variables in <code>main.js</code> file</cide></p>
+    <div class="header">
+      <h2>PAIRALABS TECHNOLOGIES PRIVATE LIMITED</h2>
+      <p>313, 3rd Floor, Acharya Vihar Bhubaneswar Odisha 751022 India</p>
+      <p>Payslip For the Month <strong>May 2024</strong></p>
     </div>
 
-    <script src="main.js"></script>
+    <table>
+      <tr>
+        <th>Employee Name</th>
+        <td>Krish kumar chhabra</td>
+      </tr>
+      <tr>
+        <th>Designation</th>
+        <td>React Developer</td>
+      </tr>
+      <tr>
+        <th>Employee ID</th>
+        <td>PLS-0018</td>
+      </tr>
+      <tr>
+        <th>Department</th>
+        <td>Development</td>
+      </tr>
+      <tr>
+        <th>Date of Joining</th>
+        <td>07/11/2023</td>
+      </tr>
+      <tr>
+        <th>Pay Period</th>
+        <td>May 2024</td>
+      </tr>
+      <tr>
+        <th>Pay Date</th>
+        <td>10/06/2024</td>
+      </tr>
+      <tr>
+        <th>Bank Account No</th>
+        <td>50100694966745</td>
+      </tr>
+      <tr>
+        <th>PAN</th>
+        <td>DECPC4410R</td>
+      </tr>
+    </table>
+
+    <table>
+      <thead>
+        <tr>
+          <th colspan="2">EARNINGS</th>
+          <th colspan="2">DEDUCTIONS</th>
+        </tr>
+        <tr>
+          <th>Description</th>
+          <th class="amount">Amount</th>
+          <th>Description</th>
+          <th class="amount">Amount</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Basic</td>
+          <td class="amount">₹13,000.00</td>
+          <td>Total Deductions</td>
+          <td class="amount">₹0.00</td>
+        </tr>
+        <tr>
+          <td>Gross Earnings</td>
+          <td class="amount">₹13,000.00</td>
+          <td></td>
+          <td></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="header">
+      <h2>TOTAL NET PAYABLE</h2>
+      <p>Gross Earnings - Total Deductions</p>
+      <p class="amount">₹13,000.00</p>
+      <p>Amount In Words: Indian Rupee Thirteen Thousand Only</p>
+    </div>
+
+    <div class="footer">
+      <p>- This is a system-generated document. -</p>
+    </div>
+  </div>
 </body>
 </html>
